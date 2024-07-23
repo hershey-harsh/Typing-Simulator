@@ -1,0 +1,68 @@
+<!doctype html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+
+<section class="bg-white dark:bg-gray-900 pt-8 pb-0 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+  <div class="flex justify-center">
+    <h1 class="text-4xl font-extrabold dark:text-white">Typing Simulator<span class="bg-blue-100 text-blue-800 text-2xl font-semibold mr-2 px-2 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">BETA</span></h1>
+  </div>
+</section>
+
+
+<div class="flex items-center justify-center">
+  <form style="width: 80%;">
+      <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+          <div class="px-4 py-10 bg-white rounded-t-lg dark:bg-gray-800">
+              <label for="comment" class="sr-only">Your writing</label>
+              <textarea id="comment" rows="6" class="w-full px-0 text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Copy & Paste" required></textarea>
+          </div>
+          <div class="flex items-center justify-between px-3 py-2 border-t dark:border-gray-600">
+              <button type="submit" class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
+                  Start Simulation
+              </button>
+              <div class="flex pl-0 space-x-1 sm:pl-2">
+                  <button type="button" class="inline-flex justify-center items-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 20">
+                           <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M1 6v8a5 5 0 1 0 10 0V4.5a3.5 3.5 0 1 0-7 0V13a2 2 0 0 0 4 0V6"/>
+                       </svg>
+                      <span class="sr-only">Attach file</span>
+                  </button>
+              </div>
+          </div>
+      </div>
+    <p class="ml-auto text-xs text-gray-500 dark:text-gray-400">
+      The creator of this Chrome Extension isn't subjected to any consequences or liabilities. Please refer to our
+      <a href="/tos" class="text-blue-600 dark:text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+        Terms of Service
+      </a>
+      for more information.
+    </p>
+
+    <div>
+      <br>
+      <label for="small-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Typing Speed</label>
+      <input id="small-range" type="range" value="20" class="w-full h-1 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm dark:bg-gray-700">
+     </div>
+
+     <div>
+      <br>
+      <label for="small-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Error Percentage</label>
+      <input id="small-range" type="range" value="20" class="w-full h-1 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm dark:bg-gray-700">
+     </div>
+
+     <div>
+      <br>
+      <label for="small-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correction Speed</label>
+      <input id="small-range" type="range" value="20" class="w-full h-1 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer range-sm dark:bg-gray-700">
+     </div>
+
+  </div>
+
+  </form>
+</div>
